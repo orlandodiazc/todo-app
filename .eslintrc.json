@@ -18,9 +18,9 @@
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "react/react-in-jsx-scope": "off",
     "import/no-unresolved": "off",
-    "no-shadow": "off",
-    "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
-    "react/destructuring-assignment": [0, "always"]
+    "no-shadow": "off"
+    // "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+    // "react/destructuring-assignment": [0, "always"]
   },
   "ignorePatterns": ["dist/", "build/"]
 }
