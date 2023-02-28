@@ -1,12 +1,19 @@
-import Header from './Header';
-import TodosLogic from './TodosLogic';
+import { Route, Routes } from 'react-router-dom';
+
+import About from '../routes/About';
+import Home from '../routes/Home';
+import NotMatch from '../routes/NotMatch';
+import Profile from '../routes/Profile';
+import Layout from './Layout';
 
 const TodoApp = () => (
-  <div className="wrapper">
-    <div className="todos">
-      <Header />
-      <TodosLogic />
-    </div>
-  </div>
+  <Routes>
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="profile" element={<Profile />} />
+      <Route path="*" element={<NotMatch />} />
+    </Route>
+  </Routes>
 );
 export default TodoApp;
