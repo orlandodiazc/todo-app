@@ -12,8 +12,8 @@ const TodoApp = () => (
       <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="profile" element={<Profile />} />
-      <Route path="*" element={<NotMatch />} />
     </Route>
+    <Route path="*" element={<NotMatch />} />
   </Routes>
 );
 export default TodoApp;

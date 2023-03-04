@@ -4,7 +4,6 @@ const links = [
   { path: '/', text: 'Home' },
   { path: 'about', text: 'About' },
   { path: 'profile', text: 'Profile' },
-  { path: 'login', text: 'Login' },
 ];
 
 const Navbar = () => (
