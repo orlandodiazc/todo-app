@@ -3,7 +3,7 @@ import { AiFillEdit } from 'react-icons/ai';
 import { FaTrash } from 'react-icons/fa';
 import styles from '../styles/TodoItem.module.css';
 
-const TodoItem = ({ itemProp, setTodos, handleChange, delTodo, setUpdate }) => {
+const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
   const [editing, setEditing] = useState(false);
 
   const completedStyle = {
@@ -58,4 +58,5 @@ const TodoItem = ({ itemProp, setTodos, handleChange, delTodo, setUpdate }) => {
     </li>
   );
 };
+
 export default TodoItem;
