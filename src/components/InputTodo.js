@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { FaPlusCircle } from 'react-icons/fa';
 
-const InputTodo = ({ addTodoItem }) => {
+function InputTodo({ addTodoItem }) {
   const [title, setTitle] = useState('');
   const [message, setMessage] = useState('');
   const handleSubmit = (e) => {
@@ -31,6 +32,10 @@ const InputTodo = ({ addTodoItem }) => {
       <span className="submit-warning">{message}</span>
     </>
   );
+}
+
+InputTodo.propTypes = {
+  addTodoItem: PropTypes.func.isRequired,
 };
 
 export default InputTodo;

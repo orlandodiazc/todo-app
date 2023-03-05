@@ -1,9 +1,13 @@
+import PropType from 'prop-types';
 import { useState } from 'react';
 import { AiFillEdit } from 'react-icons/ai';
 import { FaTrash } from 'react-icons/fa';
+import { TodoItemProps, TodoProps } from '../rules.d';
 import styles from '../styles/TodoItem.module.css';
 
-const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
+function TodoItem({
+  itemProp, handleChange, delTodo, setUpdate,
+}) {
   const [editing, setEditing] = useState(false);
 
   const completedStyle = {
@@ -57,6 +61,13 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
       />
     </li>
   );
+}
+
+TodoItem.propTypes = {
+  itemProp: PropType.shape(TodoItemProps).isRequired,
+  ...TodoProps,
 };
+
+TodoItem.defaultProps = {};
 
 export default TodoItem;

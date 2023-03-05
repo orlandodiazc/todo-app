@@ -1,2 +1,4 @@
-const About = () => <div>About content</div>;
+function About() {
+  return <div>About content</div>;
+}
 export default About;
