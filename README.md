@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
 
 **To Do App** is a SPA built with ReactJS
 
-[Live Site](###)
+[Live Site](https://stellar-sable-a9c8b7.netlify.app)
 
 ## Built With <a name="built-with"></a>
 
@@ -60,7 +60,7 @@ To get a local copy up and running, follow these steps.
 
 👤 **Orlando Diaz**
 
-- GitHub: [@githubhandle](https://github.com/ditod1)
+- GitHub: [@orlandodiazc](https://github.com/orlandodiazc)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/orlando-diaz-conde)
 
 <!-- FUTURE FEATURES -->
